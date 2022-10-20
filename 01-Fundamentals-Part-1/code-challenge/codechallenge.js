@@ -50,12 +50,11 @@ if (scoreD > scoreK && scoreD >= 100){
 // Challenge 4
 const bill = [275, 40, 430];
 
-const tip = [bill[0] >= 50 && bill[0] <= 300 ? bill[0] * 0.15 
-: bill[0] * 0.2, 
-bill[1] >= 50 && bill[1] <= 300 ? bill[1] * 0.15 
-: bill[1] * 0.2, 
-bill[2] >= 50 && bill[2] <= 300 ? bill[2] * 0.15 
-: bill[2] * 0.2];
+const tip = [
+  bill[0] >= 50 && bill[0] <= 300 ? bill[0] * 0.15 : bill[0] * 0.2,
+  bill[1] >= 50 && bill[1] <= 300 ? bill[1] * 0.15 : bill[1] * 0.2,
+  bill[2] >= 50 && bill[2] <= 300 ? bill[2] * 0.15 : bill[2] * 0.2,
+];
 
 console.log(`The bill is ${bill[0]} and the tip is ${tip[0]}`);
 console.log(`The bill is ${bill[1]} and the tip is ${tip[1]}`);
