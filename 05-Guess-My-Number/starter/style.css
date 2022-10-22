@@ -117,3 +117,11 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+.winBackground {
+  background-color: #60b347;
+}
+
+.winNum {
+  width: 30rem;
+}

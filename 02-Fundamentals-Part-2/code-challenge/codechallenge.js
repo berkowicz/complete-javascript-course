@@ -41,3 +41,70 @@ console.log(bills, tips, totals);
 ///////////////////////////////////////////////////////////////////////
 
 // Challange 3
+
+/* 
+const mark = {
+  firstName: "Mark",
+  lastName: "Miller",
+  hight: 1.69,
+  weight: 78,
+
+  calcBMI: function () {
+    const bmi = this.weight / this.hight ** 2;
+    return bmi;
+  },
+};
+
+const john = {
+  firstName: "John",
+  lastName: "Miller",
+  hight: 1.95,
+  weight: 92,
+
+  calcBMI: function () {
+    const bmi = this.weight / this.hight ** 2;
+    return bmi;
+  },
+};
+
+console.log(
+  `${mark.firstName} ${mark.lastName}s BMI of ${mark.calcBMI()} is ${
+    mark.calcBMI() > john.calcBMI() ? "higher" : "lower"
+  } then ${john.firstName} ${john.lastName}s of ${john.calcBMI()}`
+);
+ */
+
+/////////////////////////////////////////////////////////////////////////
+
+// Challenge 4
+
+/* 
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const total = [];
+let sum;
+
+//Bill + tip
+const calcTip = function (bills) {
+  return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
+};
+
+for (let i = 0; i < bills.length; i++) {
+  tips.push(calcTip(bills[i]));
+  total.push(bills[i] + tips[i]);
+}
+console.log(tips, total);
+
+//Average total cost
+const calcAverage = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length;
+};
+console.log(calcAverage(bills));
+console.log(calcAverage(tips));
+ */
+
+//////////////////////////////////////////////////////////////////////////////////
